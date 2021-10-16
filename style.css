@@ -1,0 +1,681 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* background-color: black; */
+}
+
+p{
+    line-height: 25px;
+}
+
+span{
+    color: rgb(255, 2, 221);
+    font-weight: 500;
+}
+
+
+
+
+
+/* *************************************Utility Class************************************* */
+
+.section-one{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/classroom-image.jpg);
+    background-size: cover;
+    background-position: center center ;
+    background-repeat:no-repeat ;
+    /* filter: blur(3px); */
+}
+
+.dimond {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: rgb(255, 2, 221);
+    position: relative;
+    top: -100px;
+    cursor: pointer;
+  }
+  .dimond:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: rgb(255, 2, 221);
+  }
+
+  .bar{
+    position: relative;
+    top: 30px;
+    right: 23px;
+    height: 4px;
+    width: 31px;
+    margin: 7px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+
+/* *************************************Section-2************************************* */
+
+
+.section-two .dimond-box{
+    width: 125px;
+    height: 125px;
+    border: 2px solid rgb(255, 2, 221);
+    border-radius: 5px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 40px 15px
+}
+
+.section-two .dimond-box:hover{
+    background-color: rgb(255, 2, 221);
+}
+
+
+.dimond-box h4 {
+    position: relative;
+    left: -13px;
+    top: 32px;
+    text-align: center;
+    transform: rotate(313deg);
+    color: rgb(255, 2, 221);
+    font-weight: 700;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+}
+ 
+
+ .dimond-box:hover h4{
+     color: #fff;
+ }
+
+.dimond-box p {
+    position: relative;
+    left: 11px;
+    top: 15px;
+    text-align: center;
+    transform: rotate(313deg);
+    color: rgb(255, 2, 221);
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+ 
+
+ .dimond-box:hover p{
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* *************************************Section-3************************************* */
+
+.section-three{
+    background-color: rgba(255, 2, 221, 0.062);
+    border-radius: 10px;
+}
+
+
+
+.slide-btn{
+    width: 30px;
+    height: 30px;
+    background-color:rgb(255, 2, 221);
+    transform: rotate(45deg);
+}
+
+.slide-btn p{
+    transform: rotate(315deg);
+    position: relative;
+    top: 10%;
+    left: 0;
+}
+
+.section-three .btn-1{
+    padding: 10px 20px;
+    background-color:rgb(255, 2, 221) ;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.1s ease-in-out;
+}
+
+.section-three .btn-1:hover{
+    color: rgb(255, 2, 221);
+    background-color: #fff;
+    border: 1px solid rgb(255, 2, 221);
+    letter-spacing: 0.1px ;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+
+
+/* *************************************Section-4************************************* */
+
+.section-four .icon{
+    width: 80px;
+    height: 80px;
+    border: 1px solid  rgba(255, 2, 221, 0.384);
+    transform: rotate(45deg);
+    position: relative;
+    right: 10px;
+}
+
+.section-four .icon i{
+    transform: rotate(315deg);
+    color:  rgb(255, 2, 221);
+    position: relative;
+    top: 14px;
+    left: 21px;
+    font-size: 2.5rem;
+}
+
+.icon{
+    transition: 0.3s ease-in-out;
+}
+
+.icon:hover{
+    background-color: rgb(255, 2, 221) ;
+}
+.icon:hover i{
+    color: #fff;
+}
+/* .section-four .icon i:hover{
+    transform: rotate(315deg);
+    background-color:  rgb(255, 2, 221);
+    position: relative;
+    top: 14px;
+    left: 21px;
+    font-size: 2.5rem;
+} */
+
+
+/* *************************************Section-5************************************* */
+
+
+.section-five{
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%) , url(image/image-5.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center center;
+    padding:  10rem 0 ;
+}
+
+.section-five img{
+    width: 100%;
+    filter: invert();
+}
+
+.section-five-icon{
+    width: clamp(58px , 7vw , 60px);
+    height: clamp(58px , 7vw , 60px);
+    border: 3px solid #fff;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    padding:12px 12px 13px 8px;
+}
+
+.section-five-icon i{
+    transform: rotate(315deg);
+    position: relative;
+    /* top: 14px;
+    left: 10px; */
+    /* font-size: clamp(00px , 7vw , 30px); */
+    font-size: 30px;
+}
+
+.section-five-word{
+    height: 111px;
+    overflow: hidden;
+}
+
+.section-five-word p {
+    line-height: 20px;
+}
+
+
+/* *************************************Section-6************************************* */
+
+.section-six{
+    /* margin: -50px 0; */
+    /* background: #000; */
+    /* background-color: #fff; */
+
+    /* position: absolute; */
+    margin-top: -75px;
+}
+
+.section-six .row{
+    width: 100%;
+}
+
+.section-six .carousel-inner{
+    height: 140px;
+    overflow: hidden;
+}
+
+.section-six .carousel-control-next{
+    position: absolute;
+    left: auto;
+    margin-right: -1.5rem;
+    margin-top: 45px;
+    background-color: rgb(255, 2, 221);
+    width: 3rem;
+    height: 3rem;
+    transform: rotate(45deg);
+}
+
+
+.section-six .carousel-control-prev{
+    position: absolute;
+    left: auto;
+    margin-left: -1.5rem;
+    margin-top: 45px;
+    background-color: rgb(255, 2, 221);
+    width: 3rem;
+    height: 3rem;
+    transform: rotate(45deg);
+}
+
+.section-six .carousel-control-next span , .section-six .carousel-control-prev span{
+    transform: rotate(315deg);
+    position: relative;
+    top: -1px;
+    left: 2px;
+
+}
+
+
+/* *************************************Section-7************************************* */
+
+.section-seven {
+    display: flex;
+    justify-content: center;
+    margin: 110px 0;
+}
+
+
+.section-seven .photo img{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* *************************************Section-8************************************* */
+
+.section-eight{
+    margin-top: 50px;
+    background-color: rgba(255, 2, 221, 0.062);
+}
+
+.section-eight .card{
+    border-bottom: 4px solid transparent;
+    transition: 0.3s ease-in;
+    border-radius: 30px;
+}
+
+.section-eight .card:hover{
+    border-bottom: 4px solid rgb(255, 2, 221);
+    transform: translateY(-8px);
+    
+}
+
+.section-eight .icons i{
+    margin-left: 0.5rem;
+}
+
+.section-eight button{
+    padding: 10px 20px;
+    background-color:rgb(255, 2, 221) ;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.1s ease-in-out;
+}
+
+.section-eight button:hover{
+    color: rgb(255, 2, 221);
+    background-color: #fff;
+    border: 1px solid rgb(255, 2, 221);
+    letter-spacing: 0.1px ;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+/* *************************************Section-9************************************* */
+
+.round-one{
+    transform: rotate(270deg);
+    position: relative;
+
+}
+
+.round-one::after{
+    position: absolute;
+    content: "85%";
+    font-size: 2.2rem;
+    top: 61.8%;
+    left: 34.5%;
+    transform: rotate(91deg);
+}
+
+ svg{
+    width: 250;
+    height: 250;
+    position: relative;
+    top: 55px;
+    left: 0px;
+}
+
+.track-one{
+    stroke: transparent;
+    fill: none;
+}
+
+.parentage-one{
+    fill: none;
+    stroke: rgb(255, 2, 221);
+    stroke-width: 7px;
+    stroke-dasharray: 386px;
+}
+
+.round-two{
+    transform: rotate(270deg);
+    position: relative;
+
+}
+
+.round-two::after{
+    position: absolute;
+    content: "65%";
+    font-size: 2.2rem;
+    top: 61.8%;
+    left: 34.5%;
+    transform: rotate(91deg);
+}
+
+.track-two{
+    stroke: transparent;
+    fill: none;
+}
+
+.parentage-two{
+    fill: none;
+    stroke: rgb(255, 2, 221);
+    stroke-width: 7px;
+    stroke-dasharray: 326.3;
+}
+
+.track-three{
+    stroke: transparent;
+    fill: none;
+}
+
+.parentage-three{
+    fill: none;
+    stroke: rgb(255, 2, 221);
+    stroke-width: 7px;
+    stroke-dasharray: 370;
+}
+
+.round-three{
+    transform: rotate(270deg);
+    position: relative;
+
+}
+
+.round-three::after{
+    position: absolute;
+    content: "80%";
+    font-size: 2.2rem;
+    top: 61.8%;
+    left: 34.5%;
+    transform: rotate(91deg);
+}
+
+.track-four{
+    stroke: transparent;
+    fill: none;
+}
+
+.parentage-four{
+    fill: none;
+    stroke: rgb(255, 2, 221);
+    stroke-width: 7px;
+    stroke-dasharray: 326.3;
+}
+
+.round-four{
+    transform: rotate(270deg);
+    position: relative;
+
+}
+
+.round-four::after{
+    position: absolute;
+    content: "65%";
+    font-size: 2.2rem;
+    top: 61.8%;
+    left: 34.5%;
+    transform: rotate(91deg);
+}
+
+.track-five{
+    stroke: transparent;
+    fill: none;
+}
+
+.parentage-five{
+    fill: none;
+    stroke: rgb(255, 2, 221);
+    stroke-width: 7px;
+    stroke-dasharray: 386px;
+}
+
+.round-five{
+    transform: rotate(270deg);
+    position: relative;
+
+}
+
+.round-five::after{
+    position: absolute;
+    content: "85%";
+    font-size: 2.2rem;
+    top: 61.8%;
+    left: 34.5%;
+    transform: rotate(91deg);
+}
+
+.section-nine h5{
+    position: relative;
+    top: 11rem;
+    left: -6.4rem;
+}
+
+
+/* *************************************Section-10************************************* */
+
+
+/* *************************************Section-11************************************* */
+
+.section-eleven{
+    background-color: rgba(255, 2, 221, 0.062);
+}
+
+.section-eleven .cards{
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+.section-eleven .cards:hover{
+    color: rgb(255, 2, 221);
+    transform: translateY(-10px);
+    border-bottom: 4px solid rgb(255, 2, 221);
+}
+
+.section-eleven p{
+    font-size: 60px;
+}
+
+.section-eleven ul li{
+    list-style: none;
+    line-height: 40px;
+}
+
+.section-eleven button{
+    padding: 10px 40px;
+    background-color:rgb(255, 2, 221) ;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    transition: 0.1s ease-in-out;
+    margin-bottom: -50px;
+    border-radius: 5px;
+}
+
+.section-eleven .cards:hover button{
+    color: rgb(255, 2, 221);
+    background-color: #fff;
+    border: 1px solid rgb(255, 2, 221);
+    letter-spacing: 0.1px ;
+    font-size: 17px;
+    font-weight: 900;
+
+}
+
+
+/* *************************************Section-12************************************* */
+
+.section-twelve{
+    position: relative;
+}
+
+.section-twelve::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image:linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%) , url(image/laptop-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 5rem;
+    image-resolution: 2px;
+    filter: blur(2px);
+}
+
+.section-twelve input[type="email"]{
+    display: block;
+    margin: auto;
+    width: 75%;
+    border: none;
+    background: rgba(255, 255, 255, 0.356);
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+
+.section-twelve input[type="submit"]{
+    padding: 10px 40px;
+    background-color:rgb(255, 2, 221) ;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    transition: 0.1s ease-in-out;
+    margin-bottom: -50px;
+    border-radius: 5px;
+}
+
+.section-twelve input[type="submit"]:hover{
+    color: rgb(255, 2, 221);
+    background-color: #fff;
+    border: 1px solid rgb(255, 2, 221);
+    letter-spacing: 0.1px ;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+/* *************************************Section-13************************************* */
+
+.section-thirteen .row .col-md-6{
+    height: 10.8rem;
+}
+
+
+.section-thirteen input{
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 2, 221, 0.12) ;
+    color: #fff;
+}
+
+.section-thirteen textarea{
+    height: 100%;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 2, 221, 0.12) ;
+    color: #fff;
+}
+
+.section-thirteen input[type="submit"]{
+    padding: 10px 40px;
+    background-color:rgb(255, 2, 221) ;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    transition: 0.1s ease-in-out;
+    margin-bottom: -50px;
+    border-radius: 5px;
+}
+
+.section-thirteen input[type="submit"]:hover{
+    color: rgb(255, 2, 221);
+    background-color: #fff;
+    border: 1px solid rgb(255, 2, 221);
+    letter-spacing: 0.1px ;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+
+.section-fourteen i {
+    width: 20%;
+    font-size: 1.5rem;
+}
+
+.section-fourteen i:nth-child(1){
+    color: blue;
+}
+
+.section-fourteen i:nth-child(2){
+    color: rgb(107, 218, 255);
+}
+
+.section-fourteen i:nth-child(3){
+    color: rgb(255, 2, 221) ;
+}
